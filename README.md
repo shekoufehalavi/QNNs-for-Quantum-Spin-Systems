@@ -1,2 +1,6 @@
 # QNNs-for-Quantum-Spin-Systems
 I have used and designed different QNN circuits to learn from ground state of a quantum spin system and predict it's corresponding magnetization
+In these codes, three types of quantum neural networks have been studied and designed, some of which were inspired by Cong(*QCNN*) and Liu's(*QCCNN*) papers and others were designed by me(*Brick-Wall QNN*). Other codes have also been created to further familiarize yourself with quantum machine learning tools. Both *Qiskit* and *PennyLane* are used in these codes. Also, in one of the codes, a spin system is simulated using *VQE* to compare the accuracy of this method with the *exact diagonalization* method in finding the minimum energies. The following Hamiltonian simulation was performed by the data generation code.
+$\hat{H}= \sum_{i,j=1}^N \bigl( J_{ij}  \sigma_{i}^{z} \sigma_{j}^{z} +K_{ij} \sigma_{i}^{x} \sigma_{j}^{x} \bigl)+ \sum_{i}^{N} \bigl( g_i \sigma_{i}^{x}+ h \sigma_{i}^{z} \bigl)$
+Also, in code *1D and 2D*, the same Hamiltonian has been used, but a constraint has been placed on the interaction of the spins with each other, and two one-dimensional and two-dimensional systems have been constructed. Then, using exact diagonalization, we have obtained the magnetization and its eigenvalues ​​and eigenvectors.
+shekoufehalavi@gmail.com
